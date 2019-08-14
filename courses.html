@@ -57,28 +57,29 @@
 </center>
 <br>
 
-<center><button>B</button>
+<center><button onclick="bolde()">B</button>
+    
 
-    <button>I</button>
+    <button onclick="italic()">I</button>
 
-    <button>underline</button>
-    <select>
-        <option>20px</option>
-        <option>30px</option>
-        <option>40px</option>
+    <button onclick="souligne()">underline</button>
+    <select id="fs" onchange="sizee()">
+        <option value="20px">20px</option>
+        <option value="30px">30px</option>
+        <option value="30px">40px</option>
 
     </select>
 
-    <select>
-        <option>Arial</option>
-        <option>Verdana</option>
-        <option>Geneva</option>
+    <select id="fm" onclick="fontt()">
+        <option value="Arial">Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Geneva">Geneva</option>
     </select>
-    <form>
+    <!-- <form> -->
         <br>
 
-        <Textarea cols="50" row="20"></Textarea>
-    </form>
+        <Textarea id="mytext"  cols="50" row="20"></Textarea>
+    <!-- </form> -->
 
 
 
@@ -87,5 +88,5 @@
 
 </center>
 </body>
-
+<script src="css/main.js"></script>     
 </html>
