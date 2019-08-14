@@ -9,6 +9,12 @@
     <title></title>
     <!-- <link rel="icon" href="image"> -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
 
 
 
@@ -38,27 +44,46 @@
 </center>
 <center>
     <div class="cimage">
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel.png" />
+        <div class="jq">
+            <img
+                src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel.png" />
+                <a href="#ex1" rel="modal:open"><button class="bt">View More</button></a>
+            </div>
+            <div class="jq">
         <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel1.png" />
+        <a href="#ex1" rel="modal:open"><button class="bt">View More</button></a>
+            </div>
+        <div class="jq">
+
         <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel2.png" />
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel3.png" />
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel4.png" />
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel5.png" />
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel6.png" />
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel7.png" />
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel8.png" />
-    </div>
+        <a href="#ex1" rel="modal:open"><button class="bt">View More</button></a>
+            </div>
+
+            <div class="jq"> <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel3.png" />
+                <a href="#ex1" rel="modal:open"><button class="bt">View More</button></a></div>
+            
+                <div class="jq"><img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel4.png" />
+                 <a href="#ex1" rel="modal:open"><button class="bt">View More</button></a></div>
+                 <div class="jq"><img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel5.png" />
+                 <a href="#ex1" rel="modal:open"><button class="bt">View More</button></a></div>
+                <div class="jq"><img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel6.png" />
+                <a href="#ex1" rel="modal:open"><button class="bt">View More</button></a></div>
+                <div class="jq"><img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel7.png" />
+                <a href="#ex1" rel="modal:open"><button class="bt">View More</button></a></div>
+                <div class="jq"><img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel8.png" />
+                <a href="#ex1" rel="modal:open"><button class="bt">View More</button></a></div>
+                </div>
 </center>
 <center>
     <h2 class="feedb">
-         FeedBack
+        FeedBack
     </h2>
     </div>
 </center>
 <br>
 
 <center><button onclick="bolde()">B</button>
-    
+
 
     <button onclick="italic()">I</button>
 
@@ -66,7 +91,7 @@
     <select id="fs" onchange="sizee()">
         <option value="20px">20px</option>
         <option value="30px">30px</option>
-        <option value="30px">40px</option>
+        <option value="40px">40px</option>
 
     </select>
 
@@ -76,9 +101,11 @@
         <option value="Geneva">Geneva</option>
     </select>
     <!-- <form> -->
-        <br>
+    <br>
+    <br>
+    
 
-        <Textarea id="mytext"  cols="50" row="20"></Textarea>
+    <Textarea id="mytext" cols="50" row="20"></Textarea>
     <!-- </form> -->
 
 
@@ -87,6 +114,12 @@
 
 
 </center>
+<div id="ex1" class="modal">
+    <p>This is GoMyCode Track. 
+        Each track has its own goal. 
+        By adopting this track, you chose your own goal.</p>
+</div>
 </body>
-<script src="css/main.js"></script>     
+<script src="css/main.js"></script>
+
 </html>

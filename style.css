@@ -75,13 +75,14 @@ font-size: 30px;
       align-items: flex-end; */
        
   }
-  .cimage img{
+  .cimage .jq{
     margin: 10px;
     width: 30%;
     display: inline-block;
   }
   .cimage img:hover{
       opacity: 0.5;
+
   }
   .cours{
       margin-top:40px;
@@ -89,14 +90,14 @@ font-size: 30px;
       text-align: center;
       color: white;
   }
-  .cimage1 img{
+  .cimag1 .jq1{
     margin: 10px;
     width: 30%;
     display: inline-block;
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .cimage1 img:hover{
+  .cimag1 img:hover{
       opacity: 0.5; }
     .link{
         color: blue;
@@ -120,4 +121,24 @@ font-size: 30px;
     color: white; 
     font-size:35px;
     margin-top:5px;
+    margin-bottom: 5px;
+}
+.jq{
+    display: inline-block;
+    width:30%;
+}
+.jq1{
+    display: inline-block;
+    width:30%;
+}
+.bt{
+    position: relative;
+    top: -100px;
+    z-index: 2;
+}
+.bt1{
+    position: relative;
+    top: -150px;
+    z-index: 2;
+    
 }
