@@ -71,4 +71,40 @@ $(".jq1").mouseleave(function(){
 })
    });
 
+
+   var firebaseConfig = {
+    apiKey: "AIzaSyCT_FcUaS4gIQzwQ1jReC8TIoHz2NTdJIc",
+    authDomain: "projet-872af.firebaseapp.com",
+    databaseURL: "https://projet-872af.firebaseio.com",
+    projectId: "projet-872af",
+    storageBucket: "",
+    messagingSenderId: "213003457682",
+    appId: "1:213003457682:web:6d14f97b0189bc6c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+  var messagesRef =firebase.database().ref('projet');// Setting the name of your database
+  function submitForm(){
+      event.preventDefault();
+      // Get values
+      var name=document.getElementById('name').value;
+      var track=document.getElementById('track').value;
+      var email=document.getElementById('email').value;
+      var number=document.getElementById('number').value;
+      saveMessage(name,track,email,number); //sending data to our database
+ }
+      //save message to firebase
+      function saveMessage(name,track,email,number){
+          var newMessageRef = messagesRef.push();
+          newMessageRef.set({
+          name:name,
+          track:track,
+          email:email,
+          number:number,
+          
+      });
+    }
+ 
   

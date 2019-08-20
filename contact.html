@@ -48,26 +48,29 @@
                         
                         
                         </div>
-                        <div class="cover"><center><form>
+                        <div class="cover"><center><form onsubmit="submitForm()"> 
                                 <label style="color:white;"> Name:</label><br>
-                                <input type="text" placeholder="Your Name">
+                                <input id="name" type="text" placeholder="Your Name" required>
                                 <br><br>
-                                <label style="color:white;" >track:</label><br>
-                                <select>
+                                <label  style="color:white;" >track:</label><br>
+                                <select id="track">
                                     <option>web</option>
                                     <option>AI</option>
                                     <option>GAME</option>
                                 </select>
                                 <br><br>
                                 <label style="color:white;" >Email Address:</label><br>
-                                <input type="Text" placeholder="name@example.com">
+                                <input id="email" type="Text" placeholder="name@example.com">
                                 <br><br>
                                 <label style="color:white;" >Phone number:</label><br>
-                                <input type="text" placeholder="your Phone Number">
+                                <input id="number" type="number" placeholder="your Phone Number" required>
                             <br><br>
-                                <button class="botton" oncript="myfun()">submit</button>>
+                               <input class="botton" type="submit"value="submit" oncript="myfun()">>
 
                             </form></div></center>
                         </body>
+                        <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase.js"></script>
+                        <script src="css/main.js"></script>
+
                     </html>
       
