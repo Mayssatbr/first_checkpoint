@@ -70,3 +70,5 @@ $(".jq1").mouseleave(function(){
 
 })
    });
+
+  

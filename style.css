@@ -49,24 +49,27 @@ img{
     list-style-type: none;
 
   }
-  
-  li a {
+  ul li {
+    text-align: center;
+    display:inline
+  }
+  div a {
     color: white;
     text-align: center;
-
-font-size: 30px;
+    font-size: 30px;
     padding: 50px 55px;
     text-decoration: none;
     margin-left: 150px;
     margin-bottom: 20px;
   }
   
-  li a:hover {
+  a :hover {
   color: red;
   }
-  ul li {
-    text-align: center;
-  }
+
+ 
+  
+  
   .cimage{
 
      
